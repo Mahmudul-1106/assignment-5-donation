@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>History</title>
+</head>
+
+<body>
+    <header>
+        <div id="header" class="flex justify-around items-center p-6 bg-green-50 ">
+            <div>
+                <a href="blog.html" class="btn bg-lime-300 font-bold">Blog</a>
+            </div>
+            <div class="flex items-center gap-2 font-extrabold">
+                <img src="assets/logo.png" alt="">
+                <p>Donate Bangladesh</p>
+            </div>
+            <div class="gap-2 font-bold flex">
+                <img src="assets/coin.png" alt="">
+                <p><span id="initial-amount">5500</span> BDT</p>
+            </div>
+        </div>
+        <div class="flex justify-center py-12 px-4 gap-3">
+            <a href="index.html"><button class="btn  font-bold">Donation</button></a>
+            <a href=""><button id="btn-history" class="btn font-bold bg-lime-300">History</button></a>
+        </div>
+    </header>
+
+    <main>
+        <div id="history-noa" class="mx-32  bg-yellow-200">
+            <p>History of Donations</p>
+        </div>
+    </main>
+
+    <script src="js/functions.js"></script>
+    <script src="js/utility.js"></script>
+</body>
+
+</html>
