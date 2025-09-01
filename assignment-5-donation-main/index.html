@@ -19,7 +19,7 @@
 
 <body>
     <header>
-        <div id="header" class="mx-auto w-full flex justify-around items-center p-6 bg-green-50 ">
+        <div id="header" class="mx-auto w-full flex justify-center md:justify-around items-center p-6 bg-green-50 ">
             <div>
                 <a href="blog.html" class="btn bg-lime-300 font-bold">Blog</a>
             </div>
@@ -39,9 +39,11 @@
     </header>
 
     <main>
-        <div id="donation-section">
-            <div class="px-36 mt-5">
-                <div class="card lg:card-side bg-base-100 shadow-sm p-8 flex justify-between">
+        <!-- Donate Section -->
+        <div id="donation-section" class="mx-auto">
+            <!-- Noakhali Flood Section -->
+            <div class=" sm:px-36 mt-5">
+                <div class="card lg:card-side bg-base-100 shadow-sm p-8  flex justify-between ">
                     <div>
                         <figure>
                             <img class="w-fit" src="assets/noakhali.png" alt="Album">
@@ -73,7 +75,8 @@
                 </div>
             </div>
 
-            <div class="px-36 mt-5">
+            <!-- Feni Flood Section -->
+            <div class="sm:px-36 mt-5">
                 <div class="card lg:card-side bg-base-100 shadow-sm p-8 flex justify-between">
                     <div>
                         <figure>
@@ -85,7 +88,7 @@
                             <img class="min-w-fit" src="assets/coin.png" alt="">
                             <p id="donation-tk-feni" class="font-bold"> 4200 BDT</p>
                         </div>
-                        <h2 class="card-title pt-4"> Donate for Flood Relief in Feni, Bangladesh</h2>
+                        <h2 id="feni-title" class="card-title pt-4"> Donate for Flood Relief in Feni, Bangladesh</h2>
                         <p class="text-justify"> The recent floods in Feni have devastated local communities, leading to
                             severe disruption and loss. Your generous donation will help provide immediate aid,
                             including food, clean water, and medical supplies, to those affected by this calamity.
@@ -100,28 +103,13 @@
                                 class="btn btn-primary w-full bg-lime-300 text-black font-bold border-0"
                                 onclick="my_modal_5.showModal()">Donate
                                 Now</button>
-                            <!-- Modal -->
-                            <!-- Open the modal using ID.showModal() method -->
-                            <!-- <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle text-center items-center">
-                                <div class="modal-box">
-                                    <h1 class="text-lg font-bold">Congrates!</h1>
-                                    <img class="mx-auto mt-3" src="assets/coin.png" alt="">
-                                    <p class="py-4">You Have Donated for Humankind</p>
-                                    <h3 class="text-lg font-bold">Sucssfully</h3>
-                                    <div class="modal-action">
-                                        <form method="dialog">
-                                            if there is a button in form, it will close the modal -->
-                            <!-- <button class="btn">Close</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </dialog> -->
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="px-36 mt-5">
+            <!-- Quota movement  -->
+            <div class="sm:px-36 mt-5">
                 <div class="card lg:card-side bg-base-100 shadow-sm p-8 flex justify-between">
                     <div>
                         <figure>
@@ -133,7 +121,7 @@
                             <img class="min-w-fit" src="assets/coin.png" alt="">
                             <p id="donation-tk-quota" class="font-bold"> 2500 BDT</p>
                         </div>
-                        <h2 class="card-title pt-4"> Aid for Injured in the Quota Movement</h2>
+                        <h2 id="quota-title" class="card-title pt-4"> Aid for Injured in the Quota Movement</h2>
                         <p class="text-justify"> The recent Quota movement has resulted in numerous injuries and
                             significant hardship for many individuals. Your support is crucial in providing medical
                             assistance, rehabilitation, and necessary supplies to those affected. By contributing, you
@@ -189,7 +177,7 @@
                 </dialog>
             </div>
         </div>
-
+        <!-- History Section -->
         <div id="history-section" class="hidden mx-36 mt-5 bg-base-100 shadow-sm p-5">
             <h1 class="font-extrabold text-center">History of all DONATIONS</h1>
 

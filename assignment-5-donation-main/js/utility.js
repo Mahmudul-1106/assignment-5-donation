@@ -57,3 +57,20 @@ document.getElementById('btn-noakhali').addEventListener('click', function () {
     document.getElementById('history-section').append(div);
 })
 
+// click donation for flood in feni
+document.getElementById('btn-feni').addEventListener('click', function(){
+    const donation = donationDone('donate-feni', 'donation-tk-feni')
+
+    const title = document.getElementById('feni-title').innerText
+    // history function
+    addHistory(donation, title)
+})
+
+// click donation for quota movement
+document.getElementById('btn-quota').addEventListener('click', function(){
+    const donation = donationDone('donate-quota', 'donation-tk-quota')
+
+    const title = document.getElementById('quota-title').innerText
+    // history function
+    addHistory(donation, title)
+})
